@@ -35,7 +35,7 @@
 <body>
 <main>
   <h1>ClientScribe Privacy Policy</h1>
-  <p class="meta">ClientScribe: Private AI Notes · Effective 2 November 2026</p>
+  <p class="meta">ClientScribe: Private AI Notes · Effective 23 November 2026</p>
 
   <div class="summary">
     <p>ClientScribe does not collect, transmit, sell or share your personal data or your clients' data. Recordings, transcripts and notes are created and stored on your device. We have no servers that receive them.</p>
@@ -56,7 +56,7 @@
   </ul>
 
   <h2>What we collect</h2>
-  <p>Nothing. ClientScribe has no accounts, no analytics, no advertising and no tracking. The only third-party code is open-source software for on-device processing, which sends nothing. We do not receive your recordings, transcripts, notes or any information about your clients.</p>
+  <p>Nothing, unless you turn on the optional engine results in the Android app (see below). ClientScribe has no accounts, no analytics, no advertising and no tracking. The only third-party code is open-source software for on-device processing, which sends nothing. We do not receive your recordings, transcripts, notes or any information about your clients.</p>
 
   <h2>When information leaves your device</h2>
   <p>Only when you choose to send or save it:</p>
@@ -88,6 +88,24 @@
 
   <h2>Children</h2>
   <p>ClientScribe is intended for professionals and is not directed at children.</p>
+
+  <h2>ClientScribe for Android</h2>
+  <p>The Android app follows the same principles as the iPhone and iPad app. Differences:</p>
+  <ul>
+    <li><strong>No servers of ours for your data.</strong> ClientScribe's own code never sends client data anywhere. The network permission is used by Google Play (billing, and downloading ClientScribe's offline speech models) and by Google's on-device speech model (usage diagnostics, never audio or text), and by the optional engine-results sharing below.</li>
+    <li><strong>Transcription happens on your phone</strong> by default, with the best engine your phone has for the session's language: Android's on-device speech recognition, Google's on-device AI speech model (ML Kit, on phones that have it), or ClientScribe's own offline speech models. ClientScribe's models are downloaded once from Google Play and run only on your phone; your audio never leaves it. Google's ML Kit may send Google usage diagnostics (not audio or text) under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
+    <li><strong>Optional online transcription (off by default).</strong> Only if you turn on <em>Settings › Notes › Allow online transcription (Google)</em>, sessions in a language nothing on your phone can transcribe, or a language you set to <em>Google online first</em> in <em>Settings › Speech engines</em>, are transcribed by Google's online speech service: the audio of those sessions is sent to Google and processed under <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Before each such session the app shows that the audio goes to Google, the consent script says so, and the session is marked "Google (online)". Notes are still written on your device. You can turn the setting off at any time.</li>
+    <li><strong>Engine test.</strong> <em>Settings › Speech engines › Find the best transcription engine</em> asks you to read a short sample text (not a client session). The recording stays in the phone's memory during the test and is deleted when you leave the screen; it is sent to Google only if you switch on <em>Also test Google online</em> in the test.</li>
+    <li><strong>Optional engine results (off by default).</strong> If you turn on <em>Share anonymous engine results</em>, each engine test sends us: your phone's make, model, chip, memory and Android version, the test language, each engine's accuracy and delay, the engine chosen, the app version and a random-looking phone identifier (a one-way hash, so one phone's tests can be grouped; it can't identify you). Never audio, words, clients or notes. They help us choose which offline models to offer. Turning it off deletes results that haven't been sent yet.</li>
+    <li><strong>Notes</strong> are written by ClientScribe's own on-device summarizer.</li>
+    <li><strong>Storage.</strong> The library is stored in the app's private storage, protected by Android's file-based encryption. Kept audio is encrypted with AES-256-GCM using a key held in the Android Keystore.</li>
+    <li><strong>Device backups.</strong> ClientScribe is excluded from Android cloud backup and device-to-device transfer, so client data is not copied to your Google account. Use ClientScribe's encrypted backups instead; they can be restored on Android or iPhone.</li>
+    <li><strong>Recording notification.</strong> While you record, a notification shows a timer and, unless you turn it off in Settings, the client's name. It can be visible on the lock screen.</li>
+    <li><strong>App lock</strong> uses Android's biometric prompt (fingerprint, face or your screen lock). Biometric data never reaches the app.</li>
+    <li><strong>Email and exports</strong> open the apps you choose (for example your email app) through Android's share sheet.</li>
+    <li><strong>Purchases</strong> are sold and processed by Google Play. We receive no payment details, and no client information is attached to a purchase.</li>
+    <li><strong>Permissions:</strong> microphone (to record sessions you start and the engine test), notifications (recording timer), foreground service (to keep recording with the screen off), biometrics (optional lock), internet (Google Play, model downloads, the optional features above).</li>
+  </ul>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, we will update this page and its effective date.</p>
